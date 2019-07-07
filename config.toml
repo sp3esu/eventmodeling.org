@@ -2,6 +2,7 @@ baseURL = "https://eventmodeling.org/"
 languageCode = "en-us"
 title = "Event Modeling"
 theme = "ezhil"
+DefaultContentLanguage = "en"
 
 pygmentsstyle = "vs"
 pygmentscodefences = true
@@ -19,45 +20,97 @@ disqusShortname = "eventmodeling-org"
 	disableDisqusTypes = ["page"]
 	featherIconsCDN = true
 
-[[menu.main]]
-name = "Home"
-url = "/"
-weight = 1
+[languages]
+    [languages.en]
+        [[languages.en.menu.main]]
+        name = "Home"
+        url = "/"
+        weight = 1
 
-[[menu.main]]
-name = "All posts"
-url = "/posts"
-weight = 2
+        [[languages.en.menu.main]]
+        name = "All posts"
+        url = "/posts"
+        weight = 2
 
-[[menu.main]]
-name = "Resources"
-url = "/resources"
-weight = 3
+        [[languages.en.menu.main]]
+        name = "Resources"
+        url = "/resources"
+        weight = 3
 
-[[menu.main]]
-name = "About"
-url = "/about"
-weight = 4
+        [[languages.en.menu.main]]
+        name = "About"
+        url = "/about"
+        weight = 4
 
-[[menu.main]]
-name = "Tags"
-url = "/tags"
-weight = 5
+        [[languages.en.menu.main]]
+        name = "Tags"
+        url = "/tags"
+        weight = 5
 
-[[params.social]]
-name = "Github"
-icon = "github"
-url = "https://github.com/event-modeling"
+        [[languages.en.params.social]]
+        name = "Github"
+        icon = "github"
+        url = "https://github.com/event-modeling"
 
-[[params.social]]
-name = "Twitter"
-icon = "twitter"
-url = "https://twitter.com/eventmodeling"
+        [[languages.en.params.social]]
+        name = "Twitter"
+        icon = "twitter"
+        url = "https://twitter.com/eventmodeling"
 
-[[params.social]]
-name = "RSS"
-icon = "rss"
-url = "/index.xml"
+        [[languages.en.params.social]]
+        name = "RSS"
+        icon = "rss"
+        url = "/index.xml"
 
-[taxonomies]
-   tag = "tags"
+        [languages.en.taxonomies]
+           tag = "tags"
+
+    [languages.pl]
+        # baseURL = "https://eventmodeling.pl"
+        languageName = "Polski"
+        subtitle = "Projektowanie nowoczesnych systemów informatycznych"
+
+        [[languages.pl.menu.main]]
+        name = "Strona główna"
+        url = "/pl"
+        weight = 1
+
+        [[languages.pl.menu.main]]
+        name = "Wszystkie posty"
+        url = "/pl/posts"
+        weight = 2
+
+        [[languages.pl.menu.main]]
+        name = "Zasoby"
+        url = "/zasoby"
+        weight = 3
+
+        [[languages.pl.menu.main]]
+        name = "O stronie"
+        url = "/o-stronie"
+        weight = 4
+
+        [[languages.pl.menu.main]]
+        name = "Tagi"
+        url = "/tagi"
+        weight = 5
+
+        [[languages.pl.params.social]]
+        name = "Github"
+        icon = "github"
+        url = "https://github.com/event-modeling"
+
+        [[languages.pl.params.social]]
+        name = "Twitter"
+        icon = "twitter"
+        url = "https://twitter.com/eventmodeling"
+
+        [[languages.pl.params.social]]
+        name = "RSS"
+        icon = "rss"
+        url = "/index.xml"
+
+        [languages.pl.taxonomies]
+           tag = "tagi"
+
+
